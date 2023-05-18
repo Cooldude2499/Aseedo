@@ -1,0 +1,70 @@
+:root {
+    --borderColor: #d6d7ef;
+}
+
+body {
+    background-color: var(--headerTextColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout {
+    border: 1px solid var(--borderColor);
+    box-shadow: 5px 5px 10px var(--borderColor);
+    width: 100%;
+    max-width: 310px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.logout p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    color: #fff;
+    font-size: 12px;
+    width: 82px;
+    height: 36px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 2px 2px 6px var(--borderColor) !important;
+}
+
+.logout__btn {
+    background-color: #EF233C;
+}
+
+.cancel__btn {
+    border: 1px solid var(--borderColor);
+    color: rgba(27, 27, 35, 0.5);
+}
+
+@media only screen and (min-width: 992px) {
+    .buttons {
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logout__btn {
+        order: 2;
+    }
+
+    .cancel__btn {
+        order: 1;
+    }
+}

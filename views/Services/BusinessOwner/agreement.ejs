@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="http://fonts.cdnfonts.com/css/edhan-martine" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/services/services.css">
+    <link rel="stylesheet" href="/css/services/BusinessOwner/agreement.css">
+    <link rel="stylesheet" href="/css/preLoader/preLoader.css">
+</head>
+
+<body>
+    <% var id=business._id %>
+
+        <!-- ============================ SPINNER ============================ -->
+        <div class="spinner-overlay">
+            <div class="spinner-container">
+                <div class="lds-facebook">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- ================================================================= -->
+        <!-- ================ back to top ================= -->
+        <a href="#navbar" class="back-to-top d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <!-- ============================================== -->
+
+        <!-- ===================== overlay =====================-->
+        <div class="overlay d-flex justify-content-center align-items-center" id="overlay">
+            <div class="container d-none" id="container">
+                <span class="close__btn d-none">
+                    <svg width="20" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="28.2843" width="40" height="4" transform="rotate(-45 0 28.2843)" fill="white" />
+                        <rect x="3" y="0.284241" width="40" height="4" transform="rotate(45 3 0.284241)" fill="white" />
+                    </svg>
+
+                </span>
+                <ul class="nav-link-container">
+                    <li class="nav-link"><a href="/">Home</a></li>
+                    <li class="nav-link"><a href="">Services</a></li>
+                    <li class="nav-link"><a href="">Product</a></li>
+                    <li class="nav-link"><a href="">Product Services</a></li>
+                    <li class="nav-link"><a href="/login">Login</a></li>
+                    <li><a href="#" class="button header__downloadNow d-flex justify-content-center align-items-center">
+                            <svg width="26" height="28" viewBox="0 0 26 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 1.71813V26.2806C0.000164555 26.3339 0.0160587 26.386 0.0456893 26.4303C0.07532 26.4746 0.117368 26.5091 0.166561 26.5296C0.215754 26.5501 0.269902 26.5556 0.322215 26.5455C0.374528 26.5353 0.422677 26.5099 0.460625 26.4725L13.25 14L0.460625 1.52625C0.422677 1.48884 0.374528 1.46346 0.322215 1.4533C0.269902 1.44314 0.215754 1.44865 0.166561 1.46915C0.117368 1.48964 0.07532 1.5242 0.0456893 1.56849C0.0160587 1.61278 0.000164555 1.66484 0 1.71813ZM18.6125 8.875L2.57625 0.0400032L2.56625 0.0343782C2.29 -0.115622 2.0275 0.258128 2.25375 0.475628L14.8244 12.4956L18.6125 8.875ZM2.255 27.5244C2.0275 27.7419 2.29 28.1156 2.5675 27.9656L2.5775 27.96L18.6125 19.125L14.8244 15.5031L2.255 27.5244ZM25.0862 12.4375L20.6081 9.97125L16.3975 14L20.6081 18.0269L25.0862 15.5625C26.3044 14.8894 26.3044 13.1106 25.0862 12.4375Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Download App</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ==========================================-->
+
+
+        <!-- ===================== navbar =====================-->
+
+        <nav class="navbar" id="navbar">
+            <div class="container d-flex justify-content-between">
+
+                <a href="" class="navbar__brand">Aseedo</a>
+                <span class="navbar__menuIcon">
+                    <svg width="25" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="4" fill="white" />
+                        <rect y="12" width="40" height="4" fill="white" />
+                        <rect y="24" width="40" height="4" fill="white" />
+                    </svg>
+                </span>
+                <div class="nav-links-lg d-none">
+                    <ul class="">
+                        <li class="nav-link"><a href="/">Home</a></li>
+                        <li class="nav-link"><a href="#">Services</a></li>
+                        <li class="nav-link"><a href="#">Product</a></li>
+                        <li class="nav-link"><a href="#">Product Services</a></li>
+                        <li class="nav-link"><a href="/login">Login</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- ==========================================-->
+
+        <!-- =================== Main ====================== -->
+        <section class="container">
+            <div class="back__btn__container">
+                <a href="/signup/businessowner" class="back__btn"><i class="fa-solid fa-chevron-left"></i>
+                    Back</a>
+            </div>
+            <!-- =========================== Service ============================= -->
+            <div class="agreement-container d-flex flex-col">
+                <form id="form" enctype="multipart/form-data" action="/signup/businessowner/<%= business._id %>/agreement" method="POST">
+                    <div class="col d-flex flex-col">
+                        <div class="row note">
+                            <p class="heading__note"><strong>Note</strong></p>
+                            <p class="note__text" style="font-weight: 500;">सभी शॉप ओनर / सर्विस प्रोवाइडर / प्रोडक्ट
+                                ओनर /
+                                सोशल सर्विसेज | कृप्या
+                                निम्न
+                                पंक्तियों का सेल्फ
+                                वीडियो बनाये और अपलोड करे | 👉</p>
+                        </div>
+                        <div class="row video-file-container">
+                            <div class="d-flex flex-col">
+                                <label for="video">Upload Video
+
+                                </label>
+                                <input type="file" id="video" name="videoAgreement" accept="video/*" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-row justify-content-start">
+                        <svg width="54" height="41" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M47.655 0.0149919L48.978 2.07299C39.864 8.051 35.307 14.029 35.307 20.007C35.307 23.045 36.63 24.809 39.276 25.299L45.45 19.566C47.41 20.252 49.174 21.526 50.742 23.388C52.408 25.152 53.241 27.455 53.241 30.297C53.241 33.139 52.114 35.589 49.86 37.647C47.606 39.607 44.617 40.587 40.893 40.587C37.267 40.587 34.229 39.362 31.779 36.912C29.427 34.364 28.251 30.885 28.251 26.475C28.251 16.871 34.719 8.05099 47.655 0.0149919ZM20.019 0.0149919L21.342 2.07299C12.228 8.051 7.671 14.029 7.671 20.007C7.671 23.045 8.994 24.809 11.64 25.299L17.814 19.566C19.774 20.252 21.538 21.526 23.106 23.388C24.772 25.152 25.605 27.455 25.605 30.297C25.605 33.139 24.478 35.589 22.224 37.647C19.97 39.607 16.981 40.587 13.257 40.587C9.631 40.587 6.593 39.362 4.143 36.912C1.791 34.364 0.615 30.885 0.615 26.475C0.615 16.871 7.083 8.05099 20.019 0.0149919Z"
+                                fill="#1B1B23" fill-opacity="0.15" />
+                        </svg>
+                        <p class="discount__agreement" style="font-weight: 500;">
+                            मैं इस वेबसाइट पर स्वयं रजिस्टर कर रहा हूँ | मैं ASEEDO SOLUTION PVT LTD के ASEEDO HELPCARD
+                            धारको को
+                            exclusive discount प्रदान करूँगा |
+                        </p>
+                        <svg style="align-self: end;" width="54" height="41" viewBox="0 0 54 41" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.345 40.985L5.022 38.927C14.136 32.949 18.693 26.971 18.693 20.993C18.693 17.955 17.37 16.191 14.724 15.701L8.55 21.434C6.59 20.748 4.826 19.474 3.258 17.612C1.592 15.848 0.758996 13.545 0.758996 10.703C0.758996 7.86101 1.886 5.411 4.14 3.353C6.394 1.393 9.383 0.413005 13.107 0.413005C16.733 0.413005 19.771 1.638 22.221 4.088C24.573 6.636 25.749 10.115 25.749 14.525C25.749 24.129 19.281 32.949 6.345 40.985ZM33.981 40.985L32.658 38.927C41.772 32.949 46.329 26.971 46.329 20.993C46.329 17.955 45.006 16.191 42.36 15.701L36.186 21.434C34.226 20.748 32.462 19.474 30.894 17.612C29.228 15.848 28.395 13.545 28.395 10.703C28.395 7.86101 29.522 5.411 31.776 3.353C34.03 1.393 37.019 0.413005 40.743 0.413005C44.369 0.413005 47.407 1.638 49.857 4.088C52.209 6.636 53.385 10.115 53.385 14.525C53.385 24.129 46.917 32.949 33.981 40.985Z"
+                                fill="#1B1B23" fill-opacity="0.15" />
+                        </svg>
+                    </div>
+                    <div class="col d-flex flex-col">
+                        <div class="row d-flex flex-row align-items-start">
+                            <input type="checkbox" id="agreement1" required>
+                            <label for="agreement1" class="agreement-text agreement-text-one">I undertake that I have
+                                read
+                                the terms & conditions
+                                in the
+                                business associate agreement. In Case i intend to apply as a consultant.</label>
+
+                        </div>
+                        <div class="row d-flex flex-row align-items-start">
+                            <input type="checkbox" id="agreement2" required>
+                            <label for="agreement2" class="agreement-text agreement-text-one"> I completely agree to the
+                                said terms & conditions,
+                                policies and
+                                documents and give my unequivocal, unconditional, absolute consent to the said terms,
+                                policies and documents based on which I am willing to register with ASEEDO as business
+                                associate.</label>
+                        </div>
+                    </div>
+                        <div class="next__btn__container d-flex flex-row justify-content-center align-items-center">
+                            <button type="submit"
+                                class="button next-btn d-flex flex-row justify-content-center align-items-center">
+                                Sign up
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- =================== Scripts =================== -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+        <script src="/js/main.js"></script>
+        <script src="/js/services/signUpForm.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("form").on("submit", function () {
+                    $(".spinner-overlay").fadeIn();
+                });
+            });
+        </script>
+        <!-- <script type="text/javascript">
+            $(":submit").on('click', async (e) => {
+                e.preventDefault();
+                $(".spinner-overlay").css("display", "block");
+                let id = '< % -business._id % >'
+                let videoAgreement = $("#video")[0].files[0];
+                await axios.post(`/signup/businessowner/${id}/agreement`,
+                    {
+                        videoAgreement
+                    }, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                }
+                )
+                    .then((response) => {
+                        console.log(response)
+                        $(".spinner-overlay").css("display", "none");
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    })
+            });
+        </script> -->
+        <!-- =============================================== -->
+</body>
+
+</html>

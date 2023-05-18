@@ -1,0 +1,26 @@
+@media only screen and (min-width: 992px) {
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+    .sidebar {
+        position: relative;
+        margin-left: 0 ;
+        top: 0;
+        border-radius: 0;
+        height: 100vh;
+        max-height: 100vh;
+        width: 30%;
+    }
+
+    .main__body {
+        margin-top: 22px;
+        width: 100%;
+        justify-content: start;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .top-container {
+        margin-top: 22px;
+    }
+}

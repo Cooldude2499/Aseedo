@@ -1,0 +1,294 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background-color: var(--buttonColor);
+    margin-bottom: 50px;
+}
+
+:root {
+    --fadedColor: rgba(27, 27, 35, 0.5);
+    --borderColor: #D6D7EF;
+}
+
+.body__container {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+
+/* ======================= Table of contents =============================== */
+
+
+/* ========================================================================= */
+
+/* ===================
+      1. Capsules
+========================*/
+
+.capsule__box {
+    width: 100%;
+}
+
+.capsule__btn {
+    border-radius: 0.4em;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.capsule {
+    /* outline: none; */
+    text-decoration: none;
+    color: var(--headerBackgroundColor);
+}
+
+/* =============================
+        Service Form
+===============================*/
+
+.form {
+    border-radius: 0.4em;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 5%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.active-form {
+    display: none;
+}
+
+input,
+.dropdown {
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 0 12px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--borderColor);
+}
+
+input[type=file] {
+    padding: 9px 0 9px 20px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 6px var(--borderColor);
+}
+
+.next__btn__container {
+    margin-top: 30px;
+}
+
+.dropdown {
+    padding-right: 20px;
+    position: relative;
+}
+
+.dropdown p {
+    color: gray;
+
+}
+
+.disabled {
+    background-color: #eee;
+}
+
+.disabled p {
+    color: var(--fadedColor);
+}
+
+/* ====================
+        Next btn
+=======================*/
+
+.next-btn {
+    border-radius: 0.5em;
+    color: var(--headerBackgroundColor);
+    background-color: var(--buttonColor);
+    font-size: 20px;
+    padding: 0.8em 1em;
+    box-shadow: 2px 2px 6px var(--headerBackgroundColor) !important;
+    border: none;
+    cursor: pointer;
+}
+
+.next-btn:active {
+    box-shadow: 1px 1px 3px var(--headerBackgroundColor) !important;
+}
+
+/* ===============================
+        Responsive CSS
+===================================*/
+
+@media only screen and (min-width: 992px) {
+
+    /* =====================
+            Capsules
+    ======================== */
+    .capsules__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 4vh 22px;
+        border-radius: 0.6em;
+        position: relative;
+    }
+
+    .capsule {
+        outline: none;
+    }
+
+    .fa-plus,
+    .fa-minus {
+        display: none;
+    }
+
+    .capsule__box {
+        width: 23%;
+        border-radius: 8em;
+    }
+
+    .capsule__btn {
+        border: 1px solid black;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 10px;
+        background-color: var(--stepsBackgroundColor);
+        border-radius: 8em;
+        margin: 0;
+    }
+
+    .faded {
+        color: var(--fadedColor);
+    }
+
+    .btn-text {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .active,
+    .capsule__btn:hover,
+    .capsule:focus .capsule__btn {
+        outline: none;
+        border: 1px solid var(--buttonColor);
+        background-color: var(--buttonColor);
+        transition: background 0.5s;
+    }
+
+    /* =====================
+            Service Form
+    ========================= */
+    .form {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin-top: 20px;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    .active-form {
+        display: block;
+    }
+
+    .left {
+        margin-right: 20px;
+    }
+
+    .left,
+    .right {
+        width: 50%;
+    }
+
+    .field {
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+
+
+.dropdown ul {
+    box-sizing: content-box;
+    width: 100%;
+    left: -1px;
+    top: 90%;
+    z-index: 1;
+    text-align: left;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid var(--borderColor);
+    border-top: none;
+    list-style-type: none;
+    font-size: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow-y: auto;
+    position: absolute;
+}
+
+.dropdown ul li {
+    cursor: pointer;
+    padding: 12px 0 12px 20px;
+}
+
+.dropdown ul li:hover {
+    background-color: var(--buttonColor);
+}
+
+.cities-list {
+    position: absolute;
+}
+
+.cities {
+    overflow-y: auto;
+}
+
+.d-block {
+    display: block;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+}
+
+.error {
+    color: red;
+}

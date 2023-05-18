@@ -1,0 +1,361 @@
+/* ===============
+    Global
+============= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--navbarBackgroundColor);
+    color: var(--navbarTextColor);
+}
+
+:root {
+    --borderColor: #D6D7EF;
+    --navbarTextColor: #1b1b23;
+    --navbarBackgroundColor: #FFB703;
+    --fadedColor: rgba(27, 27, 35, 0.5);
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body {}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.d-none {
+    display: none;
+}
+
+img.fluid {
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.faded {
+    text-decoration: none;
+    color: var(--fadedColor);
+}
+
+/* ========================= Table of Contents =========================
+1. Sidebar
+2. Logout Button
+3. Navbar
+4. back to top
+5. Main Body
+6. Responsive CSS
+    6.1 sidebar
+    6.2 navbar
+    6.3 Main body
+ ======================================================================= */
+
+/* ===============
+    1. Sidebar
+  ============= */
+
+.brand__logo {
+    margin: 25px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--navbarTextColor);
+}
+
+
+
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 78px;
+    background-color: #fff;
+    padding-top: 10px;
+    border: 1.5px solid var(--borderColor);
+    width: 60%;
+    border-radius: 8px;
+    overflow-y: scroll !important;
+    height: 76vh;
+    max-height: 510px;
+    align-self: flex-start;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+}
+
+.nav-items {
+    width: 96%;
+}
+
+.nav-items ul {
+    list-style-type: none;
+}
+
+
+
+.nav-link {
+    padding: 18px 23px;
+    color: var(--navbarTextColor);
+}
+
+.nav-items a {
+    text-decoration: none;
+}
+
+.nav-link svg {
+    margin-right: 12px;
+}
+
+.active,
+.nav-link:hover{
+    background: var(--navbarBackgroundColor);
+}
+
+.nav-link:focus {
+    outline: none;
+background-color: black !important;
+}
+
+/* ======================
+    2. Logout Button
+=======================*/
+.button {
+    color: #fff;
+    font-size: 12px;
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 30px 0;
+}
+
+.logout__btn {
+    background-color: #EF233C;
+}
+
+.button:hover{
+    box-shadow: 2px 2px 6px var(--borderColor);
+}
+.button:focus {
+    outline: none;
+    box-shadow: 2px 2px 6px var(--navbarTextColor);
+}
+
+.btn-container {
+    padding: 30px 0;
+    width: 100%;
+}
+
+/* ===============
+     3. Navbar
+ ============= */
+.navbar {
+    --navbarHeight: 68px;
+    background-color: var(--navbarBackgroundColor);
+    position: fixed;
+    width: 100%;
+    height: var(--navbarHeight);
+}
+
+.navbar__brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--navbarTextColor);
+}
+
+.navbar__menuIcon>svg {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+
+/* ================= 
+     4. back to top
+   ================= */
+
+.back-to-top {
+    font-size: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    color: var(--navbarTextColor);
+    background-color: var(--navbarBackgroundColor);
+    border-radius: 50%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.scrolled {
+    visibility: visible;
+    opacity: 0.9;
+    transition: opacity 1s linear;
+}
+
+/* =============================
+        5. Main Body
+================================*/
+.main__body {
+    margin: 100px auto 0;
+}
+
+.main__body::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* =============================
+        6. Responsive CSS 
+================================*/
+
+@media only screen and (min-width: 992px) {
+    /* ===============
+        6.1 Sidebar
+       =============== */
+
+    .brand__logo {
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--navbarTextColor);
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0 !important;
+        top: 40px;
+        align-items: flex-start;
+        border: 1.5px solid var(--borderColor);
+        width: 17%;
+        margin-left: 4%;
+        border-radius: 8px;
+        overflow-y: auto;
+        height: 90vh;
+        max-height: 610px;
+        align-self: flex-start;
+    }
+
+    .sidebar::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .nav-items {
+        width: 96%;
+    }
+
+    .nav-items ul {
+        list-style-type: none;
+    }
+
+    .nav-link {
+        padding: 18px 23px;
+        color: var(--navbarTextColor);
+    }
+
+    .nav-items a {
+        text-decoration: none;
+    }
+
+    .nav-link svg {
+        margin-right: 12px;
+    }
+
+
+    /* =============
+          6.2 navbar
+       ============= */
+    .navbar {
+        display: none;
+    }
+
+    /* =============
+              6.3 Main body
+           ============= */
+
+    .main__body {
+        margin: 0 20px;
+        height: 90vh;
+    }
+
+}

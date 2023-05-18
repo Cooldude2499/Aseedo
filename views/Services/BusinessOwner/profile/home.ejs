@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="http://fonts.cdnfonts.com/css/edhan-martine" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/dashboard/sidebar.css">
+    <link rel="stylesheet" href="/css/services/BusinessOwner/profile/home.css">
+    <link rel="stylesheet" href="/css/services/BusinessOwner/profile/style.css">
+</head>
+
+<body>
+    <!-- ================ back to top ================= -->
+    <a href="#top" class="back-to-top d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- ============================================== -->
+
+    <!-- ===================== navbar =====================-->
+    <nav class="navbar d-flex" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="navbar__brand">Aseedo</a>
+            <div class="menu d-flex flex-row justify-content-center align-items-center">
+                <!-- ==================== Search Icon ==================== -->
+                <!-- <span class="search__Icon">
+                    <a href="#search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </span> -->
+                <!-- ===================================================== -->
+                <!-- ====================== menu icon ======================= -->
+                <span style="width: 30px;"
+                    class="navbar__menuIcon d-flex flex-row justify-content-center align-items-center">
+                    <svg width="25" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="4" fill="black" />
+                        <rect y="12" width="40" height="4" fill="black" />
+                        <rect y="24" width="40" height="4" fill="black" />
+                    </svg>
+                </span>
+                <!-- =========================================== -->
+                <!-- ============= close btn ============== -->
+                <span class="close__btn d-none" style="width: 30px;cursor: pointer;">
+                    <svg width="20" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="28.2843" width="40" height="4" transform="rotate(-45 0 28.2843)" fill="black" />
+                        <rect x="3" y="0.284241" width="40" height="4" transform="rotate(45 3 0.284241)" fill="black" />
+                    </svg>
+                </span>
+                <!-- ======================================= -->
+            </div>
+        </div>
+    </nav>
+    <!-- ==========================================-->
+
+    <!-- =================================== MAIN ================================== -->
+    <div class="container d-flex flex-row justify-content-start" id="top">
+        <!-- ===================== Sidebar ====================== -->
+        <section class="sidebar d-flex flex-col align-items-center" id="sidebar">
+            <a href="#" class="brand__logo d-none">Aseedo</a>
+            <div class="nav-items">
+                <ul>
+                    <a href="#" class="">
+                        <li class="nav-link d-flex active">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.59718 2.16263C9.23624 1.91409 8.7638 1.91409 8.40286 2.16263L2.45282 6.25987C2.17525 6.45101 2.00624 6.75902 1.99375 7.08977C1.95055 8.23305 1.90477 10.2351 2.0305 11.6562C2.12536 12.7282 2.37782 14.1453 2.58288 15.1878C2.67811 15.6719 3.0995 16.0235 3.60033 16.0235H6.37029C6.4883 16.0235 6.58397 15.9257 6.58397 15.8052V12.3126C6.58397 11.4687 7.25363 10.7846 8.0797 10.7846H10.1743C11.0003 10.7846 11.67 11.4687 11.67 12.3126V15.8052C11.67 15.9257 11.7657 16.0235 11.8837 16.0235H14.3997C14.9005 16.0235 15.3219 15.6719 15.4172 15.1878C15.6222 14.1453 15.8747 12.7282 15.9695 11.6562C16.0953 10.2351 16.0495 8.23305 16.0063 7.08977C15.9938 6.75902 15.8248 6.45101 15.5472 6.25987L9.59718 2.16263ZM7.68628 1.0766C8.48033 0.529807 9.51971 0.529806 10.3138 1.0766L16.2638 5.17383C16.8715 5.59227 17.2587 6.28022 17.2874 7.03925C17.3305 8.18126 17.3804 10.2597 17.2464 11.7741C17.1448 12.922 16.8801 14.3986 16.6741 15.4458C16.4551 16.559 15.4937 17.3332 14.3997 17.3332H11.8837C11.0576 17.3332 10.3879 16.6491 10.3879 15.8052V12.3126C10.3879 12.192 10.2923 12.0943 10.1743 12.0943H8.0797C7.96169 12.0943 7.86602 12.192 7.86602 12.3126V15.8052C7.86602 16.6491 7.19636 17.3332 6.37029 17.3332H3.60033C2.50636 17.3332 1.54493 16.559 1.32596 15.4458C1.11995 14.3986 0.855223 12.922 0.753659 11.7741C0.619667 10.2597 0.669504 8.18126 0.712649 7.03925C0.741326 6.28022 1.12858 5.59227 1.73623 5.17384L7.68628 1.0766Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Home
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex align-items-center">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.00002 1.54562C7.11299 1.54562 4.54275 1.70739 2.91058 1.82634C2.36854 1.86584 1.94874 2.29493 1.94874 2.81901V3.41123L8.48117 6.84241C8.80384 7.01189 9.1962 7.01189 9.51887 6.84241L16.0513 3.41123V2.81901C16.0513 2.29493 15.6315 1.86584 15.0895 1.82634C13.4573 1.70739 10.887 1.54562 9.00002 1.54562ZM16.0513 4.79785L10.1415 7.90199C9.43161 8.27486 8.56843 8.27486 7.85855 7.90199L1.94874 4.79785V11.1813C1.94874 11.7054 2.36854 12.1345 2.91058 12.174C4.54275 12.2929 7.11299 12.4547 9.00002 12.4547C10.887 12.4547 13.4573 12.2929 15.0895 12.174C15.6315 12.1345 16.0513 11.7054 16.0513 11.1813V4.79785ZM2.81205 0.617804C4.4452 0.498781 7.05892 0.333496 9.00002 0.333496C10.9411 0.333496 13.5548 0.49878 15.188 0.617804C16.4085 0.706754 17.3334 1.67173 17.3334 2.81901V11.1813C17.3334 12.3286 16.4085 13.2936 15.188 13.3825C13.5548 13.5015 10.9411 13.6668 9.00002 13.6668C7.05892 13.6668 4.4452 13.5015 2.81205 13.3825C1.59154 13.2936 0.666687 12.3286 0.666687 11.1813V2.81901C0.666687 1.67173 1.59154 0.706755 2.81205 0.617804Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Message
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.71613 5.22765C2.48761 2.46508 5.11154 0.666504 8 0.666504C10.8885 0.666504 13.5124 2.46508 14.2839 5.22765C14.4694 5.89184 14.6421 6.55968 14.7719 7.15757C15.0747 8.55297 15.3272 10.4156 15.4834 11.7051C15.6305 12.9188 14.7832 14.0309 13.5393 14.2257C12.0482 14.4591 9.74717 14.7691 8 14.7691C6.25283 14.7691 3.95179 14.4591 2.46072 14.2257C1.21676 14.0309 0.369543 12.9188 0.516553 11.7051C0.672761 10.4156 0.925263 8.55297 1.22813 7.15757C1.35791 6.55968 1.53065 5.89184 1.71613 5.22765ZM8 1.94855C5.65828 1.94855 3.58735 3.40193 2.98334 5.56482C2.80146 6.21611 2.6357 6.85823 2.51306 7.42329C2.22359 8.75695 1.97673 10.5694 1.82091 11.8557C1.75567 12.3943 2.12789 12.8751 2.66874 12.9598C4.15662 13.1927 6.36696 13.487 8 13.487C9.63304 13.487 11.8434 13.1927 13.3313 12.9598C13.8721 12.8751 14.2443 12.3943 14.1791 11.8557C14.0233 10.5694 13.7764 8.75695 13.4869 7.42329C13.3643 6.85823 13.1985 6.21611 13.0167 5.56482C12.4127 3.40193 10.3417 1.94855 8 1.94855Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.24874 13.487C6.61144 13.487 6.90546 13.774 6.90546 14.128V14.9827C6.90546 15.5728 7.3955 16.0511 8 16.0511C8.6045 16.0511 9.09454 15.5728 9.09454 14.9827V14.128C9.09454 13.774 9.38856 13.487 9.75126 13.487C10.114 13.487 10.408 13.774 10.408 14.128V14.9827C10.408 16.2808 9.32989 17.3332 8 17.3332C6.67011 17.3332 5.59202 16.2808 5.59202 14.9827V14.128C5.59202 13.774 5.88604 13.487 6.24874 13.487Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Notification
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.99998 1.94855C5.45596 1.94855 4.20428 3.19221 4.20428 4.72633C4.20428 6.26046 5.45596 7.50411 6.99998 7.50411C8.544 7.50411 9.79568 6.26046 9.79568 4.72633C9.79568 3.19221 8.544 1.94855 6.99998 1.94855ZM2.91396 4.72633C2.91396 2.48415 4.74333 0.666504 6.99998 0.666504C9.25663 0.666504 11.086 2.48415 11.086 4.72633C11.086 6.96851 9.25663 8.78616 6.99998 8.78616C4.74333 8.78616 2.91396 6.96851 2.91396 4.72633Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.88846 11.7776C3.08535 11.7776 1.62364 13.23 1.62364 15.0215C1.62364 15.1156 1.64094 15.182 1.65908 15.2206C1.67439 15.2533 1.68753 15.2626 1.69849 15.2685C2.19988 15.5396 3.60566 16.0511 6.99998 16.0511C10.3943 16.0511 11.8001 15.5396 12.3015 15.2685C12.3124 15.2626 12.3256 15.2533 12.3409 15.2206C12.359 15.182 12.3763 15.1156 12.3763 15.0215C12.3763 13.23 10.9146 11.7776 9.1115 11.7776H4.88846ZM0.333313 15.0215C0.333313 12.5219 2.37272 10.4956 4.88846 10.4956H9.1115C11.6272 10.4956 13.6666 12.5219 13.6666 15.0215C13.6666 15.4804 13.4995 16.0804 12.9182 16.3946C12.1483 16.8109 10.4965 17.3332 6.99998 17.3332C3.50343 17.3332 1.85169 16.8109 1.08174 16.3946C0.500508 16.0804 0.333313 15.4804 0.333313 15.0215Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Profile
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.99967 1.94856C5.72896 1.94856 4.02261 2.08802 2.82919 2.20375C2.33398 2.25178 1.94751 2.64409 1.90918 3.14144C1.79051 4.68112 1.62333 7.17719 1.62333 8.99984C1.62333 10.8225 1.79051 13.3186 1.90918 14.8582C1.94751 15.3556 2.33398 15.7479 2.82919 15.7959C4.02261 15.9116 5.72896 16.0511 6.99967 16.0511C8.27039 16.0511 9.97673 15.9116 11.1702 15.7959C11.6654 15.7479 12.0518 15.3556 12.0902 14.8582C12.2088 13.3186 12.376 10.8225 12.376 8.99984C12.376 7.17719 12.2088 4.68112 12.0902 3.14144C12.0518 2.64409 11.6654 2.25178 11.1702 2.20375C9.97673 2.08802 8.27039 1.94856 6.99967 1.94856ZM2.70386 0.927765C3.90043 0.811729 5.66095 0.666504 6.99967 0.666504C8.3384 0.666504 10.0989 0.811729 11.2955 0.927765C12.4188 1.03669 13.2909 1.92988 13.3767 3.04355C13.4954 4.58376 13.6663 7.12328 13.6663 8.99984C13.6663 10.8764 13.4954 13.4159 13.3767 14.9561C13.2909 16.0698 12.4188 16.963 11.2955 17.0719C10.0989 17.1879 8.3384 17.3332 6.99967 17.3332C5.66095 17.3332 3.90043 17.1879 2.70386 17.0719C1.58059 16.963 0.708463 16.0698 0.622625 14.9561C0.503909 13.4159 0.333008 10.8764 0.333008 8.99984C0.333008 7.12328 0.503909 4.58376 0.622625 3.04355C0.708463 1.92988 1.58059 1.03669 2.70386 0.927765Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.77387 10.7092C3.77387 11.0633 4.06272 11.3503 4.41903 11.3503H9.58032C9.93663 11.3503 10.2255 11.0633 10.2255 10.7092C10.2255 10.3552 9.93663 10.0682 9.58032 10.0682H4.41903C4.06272 10.0682 3.77387 10.3552 3.77387 10.7092Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.77387 7.29043C3.77387 7.64446 4.06272 7.93146 4.41903 7.93146H6.99967C7.35599 7.93146 7.64483 7.64446 7.64483 7.29043C7.64483 6.93641 7.35599 6.64941 6.99967 6.64941H4.41903C4.06272 6.64941 3.77387 6.93641 3.77387 7.29043Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Aseedo Plans
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.305 9.53855L9.9405 9.55797L12.6281 12.0736C12.9497 12.3769 12.7529 12.9131 12.3136 12.9365C12.1788 12.9437 12.046 12.8957 11.9458 12.8009L8.76809 9.82571C8.63135 9.7028 8.55188 9.52678 8.54231 9.34704C8.52129 8.9526 8.82382 8.61603 9.21826 8.59502L10.2518 8.53997C11.1306 8.49316 11.8249 7.80525 11.8996 6.95007L8.42449 7.13517C8.14988 7.1498 7.91323 6.93709 7.8986 6.66248C7.88397 6.38787 8.09669 6.15122 8.3713 6.13659L11.6966 5.95947C11.3856 5.38519 10.7646 5.00769 10.0656 5.04492L8.31811 5.138C8.0435 5.15263 7.80685 4.93992 7.79222 4.66531C7.77759 4.3907 7.99031 4.15405 8.26492 4.13942L13.2578 3.87347C13.5324 3.85884 13.7691 4.07155 13.7837 4.34617C13.7984 4.62078 13.5856 4.85743 13.311 4.87205L12.1826 4.93216C12.4377 5.20898 12.6355 5.53893 12.7601 5.90282L13.3642 5.87064C13.6388 5.85601 13.8755 6.06872 13.8901 6.34333C13.9047 6.61795 13.692 6.85459 13.4174 6.86922L12.9081 6.89635C12.8528 8.30128 11.733 9.46249 10.305 9.53855Z"
+                                    fill="#1B1B23" fill-opacity="1" />
+                                <path
+                                    d="M19.5257 1.85892C13.0538 0.719162 9.02156 0.705803 2.62422 1.8662C2.01024 1.97756 1.53032 2.46537 1.43421 3.08192C0.85177 6.81818 0.859099 9.25705 1.43321 12.8941C1.52999 13.5072 2.00668 13.9924 2.61696 14.1056C9.06918 15.3022 13.1014 15.29 19.5252 14.1176C20.1739 13.9992 20.6666 13.4628 20.7295 12.8064C21.0762 9.19127 21.1013 6.77306 20.7367 3.16001C20.6706 2.50488 20.1742 1.97312 19.5257 1.85892Z"
+                                    stroke="#1B1B23" stroke-opacity="1" stroke-width="1.2" />
+                            </svg>
+
+                            Payments
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.18516 7.4404H12.3333L9.2222 11.6314L5.8148 16.0173V10.5593H1.66666L5.09522 6.27083L8.18516 1.98237V7.4404ZM4.02786 5.4816L7.09852 1.2199C7.43471 0.753316 8.03804 0.554804 8.5907 0.728934C9.14336 0.903063 9.5185 1.40986 9.5185 1.98237V6.12463H12.3333C12.8356 6.12463 13.2953 6.40323 13.5225 6.84536C13.7497 7.28748 13.7058 7.81808 13.4089 8.21797L10.2978 12.409C10.2921 12.4167 10.2862 12.4244 10.2803 12.432L6.87294 16.8179C6.52534 17.2653 5.92751 17.4445 5.38648 17.2633C4.84545 17.0822 4.48147 16.5811 4.48147 16.0173V11.8751H1.66666C1.15574 11.8751 0.689759 11.5869 0.466881 11.1333C0.244003 10.6796 0.30343 10.1401 0.619886 9.74429L4.02786 5.4816Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Refer & Earn
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.99998 1.94856C5.72926 1.94856 4.02292 2.08802 2.8295 2.20375C2.33429 2.25178 1.94782 2.64409 1.90948 3.14144C1.79081 4.68112 1.62364 7.17719 1.62364 8.99984C1.62364 10.8225 1.79081 13.3186 1.90948 14.8582C1.94782 15.3556 2.33429 15.7479 2.8295 15.7959C4.02292 15.9116 5.72926 16.0511 6.99998 16.0511C8.2707 16.0511 9.97704 15.9116 11.1705 15.7959C11.6657 15.7479 12.0521 15.3556 12.0905 14.8582C12.2091 13.3186 12.3763 10.8225 12.3763 8.99984C12.3763 7.17719 12.2091 4.68112 12.0905 3.14144C12.0521 2.64409 11.6657 2.25178 11.1705 2.20375C9.97704 2.08802 8.2707 1.94856 6.99998 1.94856ZM2.70416 0.927765C3.90073 0.811729 5.66126 0.666504 6.99998 0.666504C8.3387 0.666504 10.0992 0.811729 11.2958 0.927765C12.4191 1.03669 13.2912 1.92988 13.377 3.04355C13.4957 4.58376 13.6666 7.12328 13.6666 8.99984C13.6666 10.8764 13.4957 13.4159 13.377 14.9561C13.2912 16.0698 12.4191 16.963 11.2958 17.0719C10.0992 17.1879 8.3387 17.3332 6.99998 17.3332C5.66126 17.3332 3.90073 17.1879 2.70416 17.0719C1.58089 16.963 0.708768 16.0698 0.62293 14.9561C0.504214 13.4159 0.333313 10.8764 0.333313 8.99984C0.333313 7.12328 0.504214 4.58376 0.62293 3.04355C0.708768 1.92988 1.58089 1.03669 2.70416 0.927765Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.77417 10.7092C3.77417 11.0633 4.06302 11.3503 4.41933 11.3503H9.58062C9.93694 11.3503 10.2258 11.0633 10.2258 10.7092C10.2258 10.3552 9.93694 10.0682 9.58062 10.0682H4.41933C4.06302 10.0682 3.77417 10.3552 3.77417 10.7092Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.77417 7.29043C3.77417 7.64446 4.06302 7.93146 4.41933 7.93146H6.99998C7.35629 7.93146 7.64514 7.64446 7.64514 7.29043C7.64514 6.93641 7.35629 6.64941 6.99998 6.64941H4.41933C4.06302 6.64941 3.77417 6.93641 3.77417 7.29043Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            FAQ
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.8008 1.42616C12.8137 0.413285 14.4559 0.413287 15.4687 1.42616L16.5737 2.53111C17.5866 3.54398 17.5866 5.18617 16.5737 6.19904L6.19922 16.5735C5.71282 17.0599 5.05313 17.3332 4.36526 17.3332H1.37404C0.983379 17.3332 0.666687 17.0165 0.666687 16.6258V13.6346C0.666687 12.9467 0.939943 12.287 1.42634 11.8006L11.8008 1.42616ZM14.4684 2.4265C14.008 1.96611 13.2616 1.96611 12.8012 2.4265L10.8626 4.36507L13.6348 7.13727L15.5734 5.19869C16.0337 4.7383 16.0337 3.99185 15.5734 3.53145L14.4684 2.4265ZM12.6344 8.13761L9.86224 5.36542L2.42669 12.801C2.2056 13.0221 2.08139 13.3219 2.08139 13.6346V15.9185H4.36526C4.67792 15.9185 4.97779 15.7943 5.19888 15.5732L12.6344 8.13761Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Feedback
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="btn-container d-flex justify-content-center align-items-center">
+                <a href="/logout" class="button d-flex justify-content-center align-items-center logout__btn">Log
+                    out</a>
+            </div>
+        </section>
+        <!-- ==================================================== -->
+        <section class="main__body d-flex flex-col justify-content-center">
+            <div class="earning top-container d-flex flex-col justify-content-center">
+                <div class="earning-heading">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h2 style="font-weight: 100;">Your Earning</h2>
+                        <form action="">
+                            <select>
+                                <option value="">Weekly</option>
+                                <option value="">Monthly</option>
+                                <option value="">Yearly</option>
+                            </select>
+                        </form>
+                    </div>
+                    <p class="faded">Track how much you're earning parterned with Aseedo.</p>
+                </div>
+                <div class="earning-amount d-flex flex-col justify-content-center align-items-center">
+                    <div
+                        class="earning__earning todays-earning d-flex flex-col justify-content-center align-items-center">
+                        <h1>&#8377; 5260</h1>
+                        <p class="faded">Today's Earning</p>
+                    </div>
+                    <div
+                        class="earning__earning total-earning d-flex flex-col justify-content-center align-items-center">
+                        <h1>&#8377; 42000</h1>
+                        <p class="faded">Total Earning</p>
+                    </div>
+                    <div
+                        class="earning__earning repeatd-customers d-flex flex-col justify-content-center align-items-center">
+                        <h1>56</h1>
+                        <p class="faded">Repeated Customers</p>
+                    </div>
+                    <div class="earning__earning d-flex flex-col justify-content-center align-items-center">
+                        <h1>12%</h1>
+                        <p class="faded">Offered Discount</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container d-flex flex-col justify-content-center align-items-start">
+                <div class="add-new earning">
+                    <div class="earning-heading">
+                        <div class="d-flex flex-row justify-content-between">
+                            <h2 style="font-weight: 100;">Add New</h2>
+                        </div>
+                        <p class="faded">Track how much you're earning parterned with Aseedo.</p>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <div>
+                                <label for="CCNumber">Customer Card Number</label>
+                                <div id="asd__number" class="input d-flex flex-row align-items-center">
+                                    <div class="ASD">
+                                        ASD
+                                    </div>
+                                    <div class="input__field">
+                                        <input type="Number" id="CCNumber" placeholder="Enter Number" class="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <label for="billAmount">Bill Amount</label>
+                                <div class="input">
+                                    <input type="Number" id="billAmount" placeholder="Enter Number" class="" />
+                                </div>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""
+                                    class="button d-flex justify-content-center align-items-center add__btn">Add</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="messages earning">
+                    <div class="earning-heading">
+                        <div class="d-flex flex-row justify-content-between">
+                            <h2 style="font-weight: 100;">Your Orders</h2>
+                        </div>
+                        <p class="faded">Your new orders from the customers will appear here.</p>
+                    </div>
+                    <div class="orders">
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer2.jpg"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <div class="customer d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-row">
+                                    <div class="image-container">
+                                        <img class="fluid"
+                                            src="/images/BusinessAssociateDashboard/home/customer1.png"
+                                            alt="customer1">
+                                    </div>
+                                    <div class="d-flex flex-col justify-content-center align-items-start">
+                                        <h2 class="name__of__customer">Courtney Cox</h2>
+                                        <p class="faded">Ordered Messages</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="time"> -->
+                                <p class="faded">12:54 PM</p>
+                                <!-- </div> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- =========================================================================== -->
+
+
+
+    <!-- ============================= SCRIPTS ============================ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/dashboard/menu.js"></script>
+</body>
+
+</html>
