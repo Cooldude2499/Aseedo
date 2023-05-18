@@ -1,0 +1,70 @@
+body {
+    background-color: var(--headerTextColor);
+}
+
+.container .back__btn__container {
+    text-align: left;
+}
+
+.back__btn {
+    text-decoration: none;
+    color: var(--headerBackgroundColor);
+}
+
+.back__btn__container {
+    margin: 20px 0 40px;
+}
+
+.back__btn i {
+    font-size: 20px;
+}
+
+.aseedo__services .aseedo__services__column {
+    text-decoration: none;
+    color: var(--headerBackgroundColor);
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+    margin: 20px 11px;
+    background-color: var(--stepsBackgroundColor);
+    transition: background-color 0.6s;
+}
+
+.aseedo__services .aseedo__services__column:hover,
+.aseedo__services .aseedo__services__column:focus {
+    outline: none;
+    background-color: var(--buttonColor);
+}
+
+
+.aseedo__services .aseedo__services__column h4 {
+    font-size: 1.5rem;
+}
+
+.aseedo__services .aseedo__services__column p {
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 90%;
+}
+
+
+/* ============================== 
+      for laptops & desktops
+=============================== */
+@media only screen and (min-width:992px) {
+
+    .aseedo__services {
+        flex-direction: row;
+    }
+
+    .aseedo__services .aseedo__services__column {
+        justify-content: start;
+        padding-top: 7%;
+    }
+
+    .aseedo__services .aseedo__services__column p {
+        margin-top: 5px;
+        font-size: 0.9rem;
+        width: 90%;
+    }
+}

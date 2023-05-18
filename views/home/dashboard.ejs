@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/dashboard/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/dashboard/sidebar.css">
+</head>
+
+<body>
+    <!-- ================ back to top ================= -->
+    <a href="#top" class="back-to-top d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- ============================================== -->
+
+    <!-- ===================== navbar =====================-->
+    <nav class="navbar d-flex" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="navbar__brand">Aseedo</a>
+            <div class="menu d-flex flex-row justify-content-center align-items-center">
+                <!-- =================== Search Icon ==================== -->
+                <span class="search__Icon">
+                    <a href="#search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </span>
+                <!-- ===================================================== -->
+                <!-- ====================== menu icon ======================= -->
+                <span style="width: 30px;" class="navbar__menuIcon d-flex flex-row justify-content-center align-items-center">
+                    <svg width="25" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="4" fill="black" />
+                        <rect y="12" width="40" height="4" fill="black" />
+                        <rect y="24" width="40" height="4" fill="black" />
+                    </svg>
+                </span>
+                <!-- =========================================== -->
+                <!-- ============= close btn ============== -->
+                <span class="close__btn d-none" style="width: 30px;">
+                    <svg width="20" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="28.2843" width="40" height="4" transform="rotate(-45 0 28.2843)" fill="black" />
+                        <rect x="3" y="0.284241" width="40" height="4" transform="rotate(45 3 0.284241)" fill="black" />
+                    </svg>
+                </span>
+                <!-- ======================================= -->
+            </div>
+        </div>
+    </nav>
+    <!-- ==========================================-->
+
+
+    <!-- ====================== Body ========================= -->
+    <div class="container d-flex flex-col justify-content-center align-items-center" id="top">
+        <!-- ===================== Sidebar ====================== -->
+        <section class="sidebar d-flex flex-col align-items-center" id="sidebar">
+            <a href="#" class="brand__logo d-none">Aseedo</a>
+            <div class="nav-items">
+                <ul>
+                    <a href="#" class="">
+                        <li class="nav-link d-flex active">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.59718 2.16263C9.23624 1.91409 8.7638 1.91409 8.40286 2.16263L2.45282 6.25987C2.17525 6.45101 2.00624 6.75902 1.99375 7.08977C1.95055 8.23305 1.90477 10.2351 2.0305 11.6562C2.12536 12.7282 2.37782 14.1453 2.58288 15.1878C2.67811 15.6719 3.0995 16.0235 3.60033 16.0235H6.37029C6.4883 16.0235 6.58397 15.9257 6.58397 15.8052V12.3126C6.58397 11.4687 7.25363 10.7846 8.0797 10.7846H10.1743C11.0003 10.7846 11.67 11.4687 11.67 12.3126V15.8052C11.67 15.9257 11.7657 16.0235 11.8837 16.0235H14.3997C14.9005 16.0235 15.3219 15.6719 15.4172 15.1878C15.6222 14.1453 15.8747 12.7282 15.9695 11.6562C16.0953 10.2351 16.0495 8.23305 16.0063 7.08977C15.9938 6.75902 15.8248 6.45101 15.5472 6.25987L9.59718 2.16263ZM7.68628 1.0766C8.48033 0.529807 9.51971 0.529806 10.3138 1.0766L16.2638 5.17383C16.8715 5.59227 17.2587 6.28022 17.2874 7.03925C17.3305 8.18126 17.3804 10.2597 17.2464 11.7741C17.1448 12.922 16.8801 14.3986 16.6741 15.4458C16.4551 16.559 15.4937 17.3332 14.3997 17.3332H11.8837C11.0576 17.3332 10.3879 16.6491 10.3879 15.8052V12.3126C10.3879 12.192 10.2923 12.0943 10.1743 12.0943H8.0797C7.96169 12.0943 7.86602 12.192 7.86602 12.3126V15.8052C7.86602 16.6491 7.19636 17.3332 6.37029 17.3332H3.60033C2.50636 17.3332 1.54493 16.559 1.32596 15.4458C1.11995 14.3986 0.855223 12.922 0.753659 11.7741C0.619667 10.2597 0.669504 8.18126 0.712649 7.03925C0.741326 6.28022 1.12858 5.59227 1.73623 5.17384L7.68628 1.0766Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Home
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex align-items-center">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.00002 1.54562C7.11299 1.54562 4.54275 1.70739 2.91058 1.82634C2.36854 1.86584 1.94874 2.29493 1.94874 2.81901V3.41123L8.48117 6.84241C8.80384 7.01189 9.1962 7.01189 9.51887 6.84241L16.0513 3.41123V2.81901C16.0513 2.29493 15.6315 1.86584 15.0895 1.82634C13.4573 1.70739 10.887 1.54562 9.00002 1.54562ZM16.0513 4.79785L10.1415 7.90199C9.43161 8.27486 8.56843 8.27486 7.85855 7.90199L1.94874 4.79785V11.1813C1.94874 11.7054 2.36854 12.1345 2.91058 12.174C4.54275 12.2929 7.11299 12.4547 9.00002 12.4547C10.887 12.4547 13.4573 12.2929 15.0895 12.174C15.6315 12.1345 16.0513 11.7054 16.0513 11.1813V4.79785ZM2.81205 0.617804C4.4452 0.498781 7.05892 0.333496 9.00002 0.333496C10.9411 0.333496 13.5548 0.49878 15.188 0.617804C16.4085 0.706754 17.3334 1.67173 17.3334 2.81901V11.1813C17.3334 12.3286 16.4085 13.2936 15.188 13.3825C13.5548 13.5015 10.9411 13.6668 9.00002 13.6668C7.05892 13.6668 4.4452 13.5015 2.81205 13.3825C1.59154 13.2936 0.666687 12.3286 0.666687 11.1813V2.81901C0.666687 1.67173 1.59154 0.706755 2.81205 0.617804Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Message
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.71613 5.22765C2.48761 2.46508 5.11154 0.666504 8 0.666504C10.8885 0.666504 13.5124 2.46508 14.2839 5.22765C14.4694 5.89184 14.6421 6.55968 14.7719 7.15757C15.0747 8.55297 15.3272 10.4156 15.4834 11.7051C15.6305 12.9188 14.7832 14.0309 13.5393 14.2257C12.0482 14.4591 9.74717 14.7691 8 14.7691C6.25283 14.7691 3.95179 14.4591 2.46072 14.2257C1.21676 14.0309 0.369543 12.9188 0.516553 11.7051C0.672761 10.4156 0.925263 8.55297 1.22813 7.15757C1.35791 6.55968 1.53065 5.89184 1.71613 5.22765ZM8 1.94855C5.65828 1.94855 3.58735 3.40193 2.98334 5.56482C2.80146 6.21611 2.6357 6.85823 2.51306 7.42329C2.22359 8.75695 1.97673 10.5694 1.82091 11.8557C1.75567 12.3943 2.12789 12.8751 2.66874 12.9598C4.15662 13.1927 6.36696 13.487 8 13.487C9.63304 13.487 11.8434 13.1927 13.3313 12.9598C13.8721 12.8751 14.2443 12.3943 14.1791 11.8557C14.0233 10.5694 13.7764 8.75695 13.4869 7.42329C13.3643 6.85823 13.1985 6.21611 13.0167 5.56482C12.4127 3.40193 10.3417 1.94855 8 1.94855Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.24874 13.487C6.61144 13.487 6.90546 13.774 6.90546 14.128V14.9827C6.90546 15.5728 7.3955 16.0511 8 16.0511C8.6045 16.0511 9.09454 15.5728 9.09454 14.9827V14.128C9.09454 13.774 9.38856 13.487 9.75126 13.487C10.114 13.487 10.408 13.774 10.408 14.128V14.9827C10.408 16.2808 9.32989 17.3332 8 17.3332C6.67011 17.3332 5.59202 16.2808 5.59202 14.9827V14.128C5.59202 13.774 5.88604 13.487 6.24874 13.487Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Notification
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.99998 1.94855C5.45596 1.94855 4.20428 3.19221 4.20428 4.72633C4.20428 6.26046 5.45596 7.50411 6.99998 7.50411C8.544 7.50411 9.79568 6.26046 9.79568 4.72633C9.79568 3.19221 8.544 1.94855 6.99998 1.94855ZM2.91396 4.72633C2.91396 2.48415 4.74333 0.666504 6.99998 0.666504C9.25663 0.666504 11.086 2.48415 11.086 4.72633C11.086 6.96851 9.25663 8.78616 6.99998 8.78616C4.74333 8.78616 2.91396 6.96851 2.91396 4.72633Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.88846 11.7776C3.08535 11.7776 1.62364 13.23 1.62364 15.0215C1.62364 15.1156 1.64094 15.182 1.65908 15.2206C1.67439 15.2533 1.68753 15.2626 1.69849 15.2685C2.19988 15.5396 3.60566 16.0511 6.99998 16.0511C10.3943 16.0511 11.8001 15.5396 12.3015 15.2685C12.3124 15.2626 12.3256 15.2533 12.3409 15.2206C12.359 15.182 12.3763 15.1156 12.3763 15.0215C12.3763 13.23 10.9146 11.7776 9.1115 11.7776H4.88846ZM0.333313 15.0215C0.333313 12.5219 2.37272 10.4956 4.88846 10.4956H9.1115C11.6272 10.4956 13.6666 12.5219 13.6666 15.0215C13.6666 15.4804 13.4995 16.0804 12.9182 16.3946C12.1483 16.8109 10.4965 17.3332 6.99998 17.3332C3.50343 17.3332 1.85169 16.8109 1.08174 16.3946C0.500508 16.0804 0.333313 15.4804 0.333313 15.0215Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Profile
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.18516 7.4404H12.3333L9.2222 11.6314L5.8148 16.0173V10.5593H1.66666L5.09522 6.27083L8.18516 1.98237V7.4404ZM4.02786 5.4816L7.09852 1.2199C7.43471 0.753316 8.03804 0.554804 8.5907 0.728934C9.14336 0.903063 9.5185 1.40986 9.5185 1.98237V6.12463H12.3333C12.8356 6.12463 13.2953 6.40323 13.5225 6.84536C13.7497 7.28748 13.7058 7.81808 13.4089 8.21797L10.2978 12.409C10.2921 12.4167 10.2862 12.4244 10.2803 12.432L6.87294 16.8179C6.52534 17.2653 5.92751 17.4445 5.38648 17.2633C4.84545 17.0822 4.48147 16.5811 4.48147 16.0173V11.8751H1.66666C1.15574 11.8751 0.689759 11.5869 0.466881 11.1333C0.244003 10.6796 0.30343 10.1401 0.619886 9.74429L4.02786 5.4816Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Refer & Earn
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.99998 1.94856C5.72926 1.94856 4.02292 2.08802 2.8295 2.20375C2.33429 2.25178 1.94782 2.64409 1.90948 3.14144C1.79081 4.68112 1.62364 7.17719 1.62364 8.99984C1.62364 10.8225 1.79081 13.3186 1.90948 14.8582C1.94782 15.3556 2.33429 15.7479 2.8295 15.7959C4.02292 15.9116 5.72926 16.0511 6.99998 16.0511C8.2707 16.0511 9.97704 15.9116 11.1705 15.7959C11.6657 15.7479 12.0521 15.3556 12.0905 14.8582C12.2091 13.3186 12.3763 10.8225 12.3763 8.99984C12.3763 7.17719 12.2091 4.68112 12.0905 3.14144C12.0521 2.64409 11.6657 2.25178 11.1705 2.20375C9.97704 2.08802 8.2707 1.94856 6.99998 1.94856ZM2.70416 0.927765C3.90073 0.811729 5.66126 0.666504 6.99998 0.666504C8.3387 0.666504 10.0992 0.811729 11.2958 0.927765C12.4191 1.03669 13.2912 1.92988 13.377 3.04355C13.4957 4.58376 13.6666 7.12328 13.6666 8.99984C13.6666 10.8764 13.4957 13.4159 13.377 14.9561C13.2912 16.0698 12.4191 16.963 11.2958 17.0719C10.0992 17.1879 8.3387 17.3332 6.99998 17.3332C5.66126 17.3332 3.90073 17.1879 2.70416 17.0719C1.58089 16.963 0.708768 16.0698 0.62293 14.9561C0.504214 13.4159 0.333313 10.8764 0.333313 8.99984C0.333313 7.12328 0.504214 4.58376 0.62293 3.04355C0.708768 1.92988 1.58089 1.03669 2.70416 0.927765Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.77417 10.7092C3.77417 11.0633 4.06302 11.3503 4.41933 11.3503H9.58062C9.93694 11.3503 10.2258 11.0633 10.2258 10.7092C10.2258 10.3552 9.93694 10.0682 9.58062 10.0682H4.41933C4.06302 10.0682 3.77417 10.3552 3.77417 10.7092Z"
+                                    fill="#1B1B23" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.77417 7.29043C3.77417 7.64446 4.06302 7.93146 4.41933 7.93146H6.99998C7.35629 7.93146 7.64514 7.64446 7.64514 7.29043C7.64514 6.93641 7.35629 6.64941 6.99998 6.64941H4.41933C4.06302 6.64941 3.77417 6.93641 3.77417 7.29043Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            FAQ
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link d-flex">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.8008 1.42616C12.8137 0.413285 14.4559 0.413287 15.4687 1.42616L16.5737 2.53111C17.5866 3.54398 17.5866 5.18617 16.5737 6.19904L6.19922 16.5735C5.71282 17.0599 5.05313 17.3332 4.36526 17.3332H1.37404C0.983379 17.3332 0.666687 17.0165 0.666687 16.6258V13.6346C0.666687 12.9467 0.939943 12.287 1.42634 11.8006L11.8008 1.42616ZM14.4684 2.4265C14.008 1.96611 13.2616 1.96611 12.8012 2.4265L10.8626 4.36507L13.6348 7.13727L15.5734 5.19869C16.0337 4.7383 16.0337 3.99185 15.5734 3.53145L14.4684 2.4265ZM12.6344 8.13761L9.86224 5.36542L2.42669 12.801C2.2056 13.0221 2.08139 13.3219 2.08139 13.6346V15.9185H4.36526C4.67792 15.9185 4.97779 15.7943 5.19888 15.5732L12.6344 8.13761Z"
+                                    fill="#1B1B23" />
+                            </svg>
+                            Feedback
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="btn-container d-flex justify-content-center align-items-center">
+                <a href="#" class="button d-flex justify-content-center align-items-center logout__btn">Log
+                    out</a>
+            </div>
+        </section>
+        <!-- ==================================================== -->
+
+        <!-- ==================== Main body ======================= -->
+        <section class="main__body d-flex justify-content-center">
+            <div class="col">
+                <div class="search">
+                    <form action="" class="d-flex">
+                        <input type="text" class="search-box" placeholder="Search Services" id="search" />
+                        <a href="" class="search__btn">search</a>
+                    </form>
+                </div>
+                <h2 class="text-center near-you">Near You</h2>
+                <div class="places__to__visit ">
+                    <div class="row">
+                        <div class="heading__container d-flex flex-row justify-content-between">
+                            <p class="place__category">Restaurant</p>
+                            <a href="#" class="faded">See All</a>
+                        </div>
+                        <hr class="hr__bottom">
+                        <div class="nearby__places d-flex flex-col justify-content-center align-items-center">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image1.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">The French Gourmet</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-center">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image2.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Grill & Chill</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Khushro Bagh</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image3.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Dine in a Dime</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="heading__container d-flex flex-row justify-content-between">
+                            <p class="place__category">Grocery Store</p>
+                            <a href="#" class="faded">See All</a>
+                        </div>
+                        <hr class="hr__bottom">
+                        <div class="nearby__places d-flex flex-col justify-content-center align-items-center">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image4.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Gupta General Store</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-center">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image5.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Ansh Store</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image6.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Super Daily Store</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="heading__container d-flex flex-row justify-content-between">
+                            <p class="place__category">Grocery Store</p>
+                            <a href="#" class="faded">See All</a>
+                        </div>
+                        <hr class="hr__bottom">
+                        <div class="nearby__places d-flex flex-col justify-content-center align-items-center">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image4.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Gupta General Store</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-center">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image5.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Ansh Store</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="../assets/images/dashboard/image6.png" class="fluid" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <p class="title">Super Daily Store</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+
+                                        <div class="location">
+                                            <p class="faded">Ashoka Garden</p>
+                                        </div>
+                                        <div class="rating">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.73916 1.34164C5.97864 0.604591 7.02136 0.604592 7.26085 1.34164L8.22876 4.32057C8.33586 4.65019 8.64302 4.87336 8.9896 4.87336L12.1218 4.87336C12.8968 4.87336 13.219 5.86505 12.5921 6.32057L10.058 8.16165C9.77764 8.36536 9.66032 8.72646 9.76742 9.05608L10.7353 12.035C10.9748 12.7721 10.1312 13.385 9.50426 12.9294L6.97023 11.0884C6.68984 10.8846 6.31016 10.8846 6.02977 11.0884L3.49574 12.9294C2.86877 13.385 2.02519 12.7721 2.26467 12.035L3.23258 9.05608C3.33968 8.72646 3.22236 8.36536 2.94197 8.16165L0.407937 6.32057C-0.219034 5.86505 0.103187 4.87336 0.878166 4.87336L4.0104 4.87336C4.35698 4.87336 4.66414 4.65019 4.77124 4.32057L5.73916 1.34164Z"
+                                                    fill="#F1D12C" />
+                                            </svg>
+                                            4.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================== -->
+
+        <!-- ==================== Serivces ===================== -->
+        <section class="services text-center">
+            <h2 class="text-center services__heading">Services</h2>
+            <div class="service__man d-flex flex-col justify-content-center align-items-center">
+                <a href="" class="profile d-flex flex-row justify-content-between align-items-center">
+                    <div class="profile__pic">
+                        <img src="../assets/images/dashboard/serviceMan/profile1.png" class="fluid" alt="">
+                    </div>
+                    <div class="details text-left">
+                        <h4>Electrician</h4>
+                        <p>Sameer Singh</p>
+                    </div>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <hr>
+                <a href="" class="profile d-flex flex-row justify-content-between align-items-center">
+                    <div class="profile__pic">
+                        <img src="../assets/images/dashboard/serviceMan/profile2.png" class="fluid" alt="">
+                    </div>
+                    <div class="details text-left">
+                        <h4>Electrician</h4>
+                        <p>Sameer Singh</p>
+                    </div>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <hr>
+                <a href="" class="profile d-flex flex-row justify-content-between align-items-center">
+                    <div class="profile__pic">
+                        <img src="../assets/images/dashboard/serviceMan/profile3.png" class="fluid" alt="">
+                    </div>
+                    <div class="details text-left">
+                        <h4>Electrician</h4>
+                        <p>Sameer Singh</p>
+                    </div>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <hr>
+                <a href="" class="profile d-flex flex-row justify-content-between align-items-center">
+                    <div class="profile__pic">
+                        <img src="../assets/images/dashboard/serviceMan/profile4.png" class="fluid" alt="">
+                    </div>
+                    <div class="details text-left">
+                        <h4>Electrician</h4>
+                        <p>Sameer Singh</p>
+                    </div>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <hr>
+                <a href="" class="profile d-flex flex-row justify-content-between align-items-center">
+                    <div class="profile__pic">
+                        <img src="../assets/images/dashboard/serviceMan/profile5.png" class="fluid" alt="">
+                    </div>
+                    <div class="details text-left">
+                        <h4>Electrician</h4>
+                        <p>Sameer Singh</p>
+                    </div>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+            </div>
+            <div style="margin-top: 30px; font-size: 20px;">
+                <a href="" class="faded text-center see-all-btn">See all</a>
+            </div>
+        </section>
+        <!-- =================================================== -->
+    </div>
+
+    <!-- ========================= Scripts ============================= -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../assets/js/dashboard/menu.js"></script>
+    <!-- =============================================================== -->
+</body>
+
+</html>

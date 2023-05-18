@@ -1,0 +1,223 @@
+/* ========================= Table of Contents =========================
+1. nearby__places
+2. Card
+3. Services
+4. Responsive CSS
+    4.1 Main Body
+    4.2 Services
+ ======================================================================= */
+.search__Icon {
+    margin-right: 20px;
+}
+
+.search__Icon i {
+    font-size: 20px;
+}
+
+.search__Icon a {
+    color: var(--navbarTextColor);
+}
+
+
+/* ===============
+    1. nearby__places
+  ================ */
+.search {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 100%;
+    font-size: 20px;
+    border-top: 1px solid var(--borderColor);
+    border-left: 1px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px 0 12px 20px;
+}
+
+.search-box:focus,.search__btn:focus,.search__btn:hover {
+    outline: none;
+    box-shadow: 2px 2px 6px var(--borderColor);
+}
+
+.search__btn {
+    padding: 12px 20px;
+    font-size: 20px;
+    background-color: var(--navbarBackgroundColor);
+    color: var(--navbarTextColor);
+    text-decoration: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.nearby__places {
+    margin-top: 10px;
+}
+
+.heading__container {
+    margin-top: 15px;
+}
+
+/* ===============
+    2. Card
+============= */
+
+.card,
+.card__body,
+.card .card__image,
+.card__image img,
+.card__body p {
+    width: 100%;
+}
+
+.card {
+    margin: 0 0 15px;
+}
+
+.card-center {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card .card__image {
+    margin-bottom: 8px;
+}
+
+.card__image img {
+    max-width: 500px;
+}
+
+.card__body .title {
+    font-weight: 600;
+}
+
+.location {
+    width: 70% !important;
+}
+
+.location p {
+    width: 100%;
+    line-height: 1.5;
+    word-break:break-word;
+}
+
+.rating {
+    align-self: start;
+    line-height: 2;
+}
+
+
+/* =====================
+    3. Services
+===================== */
+.services {
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    border: 1.5px solid var(--borderColor);
+    margin-bottom: 18px;
+}
+
+.services::-webkit-scrollbar {
+    width: 0;
+}
+
+.services__heading {
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+}
+
+.service__man a {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--navbarTextColor);
+}
+
+.service__man .profile {
+    height: 80px;
+}
+
+.profile .profile__pic {
+    width: 30%;
+}
+
+.profile__pic img {
+    width: 100%;
+}
+
+
+/* =====================
+    4. Responsive CSS
+===================== */
+@media only screen and (min-width: 992px) {
+
+    /* =================
+        4.1 Main Body
+    ==================== */
+    .main__body {
+        width: 60%;
+        overflow: auto;
+    }
+
+    .near-you {
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+
+    .heading__container {
+        margin-top: 0;
+    }
+
+    .search {
+        margin-bottom: 17px;
+    }
+
+    hr {
+        margin-bottom: 12px !important;
+    }
+
+    .places__to__visit {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .places__to__visit::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .container {
+        flex-direction: row !important;
+        justify-content: space-between;
+        padding-top: 40px;
+        overflow: hidden;
+    }
+
+    .nearby__places {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+    }
+
+    /* =============
+       4.2 Services
+    ============= */
+    .services {
+        position: fixed;
+        background-color: #fff;
+        overflow: auto;
+        width: 20%;
+        right: 0;
+        bottom: 0;
+        margin-right: 1.5%;
+        height: 70%;
+    }
+}

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/flash/flash.css">
+
+<% if(success && success.length) {%>
+    <div class="alert alert-success alert-dismissible">
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 1.45455C7.73557 1.45455 4.65128 1.64867 2.69268 1.79141C2.04222 1.83882 1.53846 2.35372 1.53846 2.98262V3.69328L9.37738 7.8107C9.76459 8.01408 10.2354 8.01408 10.6226 7.81069L18.4615 3.69328V2.98261C18.4615 2.35372 17.9578 1.83882 17.3073 1.79141C15.3487 1.64867 12.2644 1.45455 10 1.45455ZM18.4615 5.35722L11.3698 9.0822C10.5179 9.52964 9.4821 9.52964 8.63024 9.0822L1.53846 5.35722V13.0174C1.53846 13.6463 2.04222 14.1612 2.69268 14.2086C4.65128 14.3513 7.73557 14.5455 10 14.5455C12.2644 14.5455 15.3487 14.3513 17.3073 14.2086C17.9578 14.1612 18.4615 13.6463 18.4615 13.0174V5.35722ZM2.57444 0.34117C4.53421 0.198341 7.67068 0 10 0C12.3293 0 15.4658 0.198341 17.4256 0.341169C18.8902 0.44791 20 1.60588 20 2.98261V13.0174C20 14.3941 18.8902 15.5521 17.4256 15.6588C15.4658 15.8017 12.3293 16 10 16C7.67068 16 4.53421 15.8017 2.57444 15.6588C1.10982 15.5521 0 14.3941 0 13.0174V2.98262C0 1.60589 1.10982 0.44791 2.57444 0.34117Z"
+                    fill="#1B1B23" />
+            </svg>
+            &nbsp;&nbsp;
+            <%= success %>
+        </div>
+        <a type="button" class="btn-close success-btn">&times;</a>
+    </div>
+
+    <% } %>
+
+        <% if(error && error.length) {%>
+            <div class="alert alert-danger alert-dismissible">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <i class="fa-solid fa-circle-exclamation"></i>&nbsp;&nbsp;
+                    <%= error %>
+                </div>
+                <a type="button danger-btn" class="btn-close">&times;</a>
+            </div>
+            <% } %>

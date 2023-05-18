@@ -1,0 +1,76 @@
+/* =============
+    GLOBAL
+=================*/
+
+:root {
+    --borderColor: #D6D7EF;
+}
+
+body {
+    background-color: var(--buttonColor);
+}
+
+
+
+.form {
+    padding: 8%;
+    text-align: left;
+    border-radius: 0.3em;
+    margin: 10% auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+}
+
+form {
+    margin-top: 14%;
+}
+
+input {
+    font-size: 1rem;
+    border: 1px solid var(--borderColor);
+    border-radius: 8px;
+    padding: 12px 0 12px 20px;
+    margin-top: 10px
+}
+
+.password-container {
+    margin-top: 40px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn-container {
+    margin-top: 30px;
+}
+
+.btn-login {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.4em;
+    color: black;
+    background-color: var(--buttonColor);
+    padding: 10px 20px;
+}
+
+.btn-login:focus,
+.btn-login:hover {
+    outline: none;
+    box-shadow: 2px 2px 10px black !important;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 6px var(--borderColor);
+}
+
+@media only screen and (min-width: 992px) {
+    .form {
+        margin: 50px auto;
+        padding: 6% 3%;
+    }
+}

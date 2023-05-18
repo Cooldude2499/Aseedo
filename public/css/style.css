@@ -1,0 +1,915 @@
+/* ===============
+    Global
+============= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--buttonColor);
+    color: var(--headerBackgroundColor);
+}
+
+:root {
+    --headerBackgroundColor: #1B1B23;
+    --headerTextColor: #fff;
+    --stepsBackgroundColor: #FFF6E0;
+    --servicesBackgroundColor: #FFEEC2;
+    --buttonColor: #FFB703;
+    --fadedColor: rgba(255, 255, 255, 0.5);
+
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background-color: var(--stepsBackgroundColor);
+    color: var(--headerBackgroundColor);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+
+.container .back__btn__container {
+    text-align: left;
+}
+
+.back__btn {
+    text-decoration: none;
+    color: var(--headerBackgroundColor);
+}
+
+.back__btn__container {
+    margin: 20px 0 40px;
+}
+
+.back__btn i {
+    font-size: 20px;
+}
+
+.d-none {
+    display: none;
+}
+
+img.fluid {
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+
+
+/* ========================= Table of Contents =========================
+1. Back to top
+2. Overlay
+3. Navbar
+4. Header
+5. Steps
+6. Services
+    6.1 laptop image
+7. About Us
+    7.1 Card
+8. Aseedo For business
+9. Download our app
+10. Footer
+11. Responsive CSS (media queries)
+    11.1 max-height: 400px
+    11.2 min-width: 600px
+    11.3 max-width: 992px
+    11.4 for laptops & desktops
+
+ ======================================================================= */
+
+
+/* ================= 
+     1. back to top
+   ================= */
+
+.back-to-top {
+    font-size: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    color: var(--buttonColor);
+    background-color: var(--headerBackgroundColor);
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.scrolled {
+    visibility: visible;
+    opacity: 0.9;
+    transition: opacity 1s linear;
+}
+
+/* ===============
+    2. Overlay
+   ============= */
+.overlay {
+    color: white;
+    position: absolute;
+    width: 100vw;
+    height: 0;
+    background-color: var(--headerBackgroundColor);
+    z-index: 1;
+}
+
+.overlay .close__btn {
+    position: absolute;
+    font-size: 2rem;
+    top: 4vh;
+    right: 6vw;
+    cursor: pointer;
+}
+
+.overlay ul {
+    list-style-type: none;
+    line-height: 2.5;
+}
+
+.overlay a.button {
+    line-height: 0;
+    margin: 2vh auto 0;
+}
+
+.overlay ul a {
+    text-decoration: none;
+    color: var(--headerTextColor);
+}
+
+/* ===============
+    3. Navbar 
+   ============= */
+.navbar {
+    background-color: var(--headerBackgroundColor);
+}
+
+.navbar__brand {
+    font-size: 24px;
+    color: var(--headerTextColor);
+    text-decoration: none;
+}
+
+.navbar>.container {
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+}
+
+.navbar__menuIcon>svg {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.navbar svg:focus {
+    outline: 1px solid #fff;
+}
+
+.nav-links-lg .nav-link {
+    float: left;
+}
+
+.nav-links-lg .nav-link a:focus,
+.nav-links-lg .nav-link a:hover,
+.overlay .nav-link a:hover {
+    outline: none;
+    border-bottom: 1px solid var(--headerTextColor);
+}
+
+a.button:focus,
+a.button:hover {
+    outline: none;
+    box-shadow: 3px 3px 10px var(--buttonColor);
+}
+
+a.business__list__btn:focus,
+a.download-store:focus,
+a.signup:focus {
+    box-shadow: 3px 3px 10px var(--headerBackgroundColor);
+}
+
+a.signup__btn:focus {
+    box-shadow: 3px 3px 10px var(--buttonColor);
+}
+
+/* ===============
+    4. Header 
+   ============= */
+header,
+footer {
+    background-color: var(--headerBackgroundColor);
+    color: var(--headerTextColor);
+}
+
+header {
+    height: 89vh;
+    padding: 5% 0 0;
+}
+
+.container {
+    text-align: center;
+    font-size: clamp(19px, 4vh, 25px);
+}
+
+.header .container {
+    width: 100%;
+    max-width: 93vw;
+}
+
+.header .header__h2 {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container .header__para {
+    font-size: 18px;
+    color: var(--fadedColor);
+    line-height: 1.5;
+}
+
+.container .header__downloadNow svg {
+    margin-right: 10px;
+}
+
+.button {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.outline {
+    border: 1px solid var(--buttonColor);
+    color: var(--headerTextColor);
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin: 15px auto 0;
+}
+
+.btns-container {
+    margin-top: 4vh;
+}
+
+.container .header__downloadNow {
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    margin: auto;
+    width: 183px;
+    color: var(--headerBackgroundColor);
+    background-color: var(--buttonColor);
+}
+
+
+.header__images {
+    overflow: hidden;
+}
+
+.header__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container81,
+.img-container82,
+.img-container83 {
+    position: absolute;
+    height: max(30vw, 30vh);
+    width: 30vw;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.img-container83 {
+    transform: translate(-2%, 9vh);
+}
+
+.img-container82 {
+    transform: translate(35vw, 3vh);
+}
+
+.img-container81 {
+    transform: translate(70vw, 6vh);
+}
+
+
+
+/* ===============
+    5. Steps
+   ============= */
+.steps {
+    padding: 15vh 0 4%;
+    text-align: center;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.circle {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    font-size: clamp(45px, 5vh, 45px);
+    font-weight: 200;
+    margin-bottom: 2em;
+}
+
+.step1 {
+    background-color: var(--buttonColor);
+}
+
+.step2,
+.step3 {
+    border: 2px solid var(--buttonColor);
+}
+
+.circle-container {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 1em;
+}
+
+.steps__step1,
+.steps__step2,
+.steps__step3 {
+    margin-bottom: 2em;
+}
+
+.steps__para1,
+.steps__para2,
+.steps__para3 {
+    padding: 0 5px;
+    color: var(--headerBackgroundColor);
+}
+
+
+/* ===============
+    6. Services
+   ============= */
+.services {
+    background-color: var(--servicesBackgroundColor);
+    padding-bottom: max(11vw, 19vh);
+}
+
+.services .services__container {
+    color: var(--headerBackgroundColor);
+    font-size: 23px;
+    padding: 8vh 0;
+}
+
+.services .services__para {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.3rem;
+}
+
+.services__grid {
+    width: 100%;
+    font-size: 1.3rem;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.services__grid__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.services__grid::-webkit-scrollbar {
+    width: 0;
+}
+
+.row1,
+.row2 {
+    align-self: flex-start;
+}
+
+.services__grid__block {
+    text-align: center;
+    padding: 8px 30px;
+    margin: 5px 5px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--stepsBackgroundColor);
+}
+
+/* ===============
+    6.1 Laptop Image
+   ============= */
+
+.laptop__image {
+    display: flex;
+    justify-content: center;
+}
+
+.macbook__mobile,
+.macbook__laptop {
+    position: absolute;
+    transform: translateY(5vh);
+    min-width: 200px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.macbook__laptop {
+    display: none;
+}
+
+/* ===============
+    7. About Us
+   ============= */
+
+
+.aboutUs__container,
+.downloadApp__container {
+    margin-top: 165px;
+}
+
+.aboutUs .aboutUs__container {
+    text-align: left;
+    padding-bottom: 10%;
+}
+
+.aboutUs__h3 {
+    line-height: 3rem;
+}
+
+.aseedo__img {
+    display: none;
+}
+
+.aboutUs .aboutUs__para,
+.aboutUs .aboutUs__learnMore {
+    font-size: 1.2rem;
+}
+
+.aboutUs .aboutUs__para {
+    line-height: 1.8rem;
+}
+
+.aboutUs a {
+    line-height: 3rem;
+    text-decoration: none;
+    color: var(--headerBackgroundColor);
+}
+
+
+/* ===============
+    7.1 Card
+   ============= */
+.card {
+    border-radius: 1em;
+    padding: 10% 10%;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+}
+
+.card-dark {
+    min-height: 300px;
+    height: 70vh;
+    max-height: 600px;
+    background-image: url("../images/portrait-woman-glasses-holding-laptop-pointing-screen-showing-her-work-computer-standing\ 2.png");
+    background-size: max(52vh, 50vw);
+    background-position: 100% 100%;
+    color: var(--headerTextColor);
+    background-color: var(--headerBackgroundColor);
+    text-align: center;
+}
+
+.signup {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--buttonColor);
+    color: var(--headerBackgroundColor);
+    border-radius: 8px;
+    padding: 0.5em 0.6em;
+}
+
+.card-text {
+    line-height: 2rem;
+    margin-bottom: 35px;
+}
+
+
+
+/* ========================
+    8. Aseedo for business
+   ======================== */
+
+.business {
+    background-color: var(--buttonColor);
+    padding: 5vw 0 20vh;
+}
+
+.business ::selection {
+    background-color: var(--headerBackgroundColor);
+    color: var(--buttonColor);
+}
+
+.business .business__h4 {
+    letter-spacing: 1.15px;
+    color: var(--headerBackgroundColor);
+}
+
+.business .business__body {
+    padding: 10% 0 0;
+    color: var(--headerBackgroundColor);
+    margin-bottom: 45px;
+}
+
+.business .business__text {
+    width: 67vw;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.business .business__frame {
+    width: 60%;
+    max-width: 300px;
+    margin: 0.5em 0 1em;
+}
+
+.business .business__list__btn {
+    text-decoration: none;
+    padding: 0.8em 1.3em;
+    background-color: var(--stepsBackgroundColor);
+    color: var(--headerBackgroundColor);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.bg-fill {
+    background-color: var(--stepsBackgroundColor);
+}
+
+.bg-light {
+    border: 2px solid var(--stepsBackgroundColor)
+}
+
+.downloadApp {
+    padding-bottom: 10%;
+}
+
+.card-light {
+    background-color: var(--stepsBackgroundColor);
+    background-image: url("../images/Group\ 419.png");
+    background-size: calc(14vw + 14vh);
+    background-position: 90% 100%;
+    min-height: 300px;
+    height: max(29vw, 65vh);
+    max-height: 597px;
+}
+
+/* ========================
+    9. Download our app
+   ======================== */
+.download-store {
+    margin-top: 2vh !important;
+}
+
+
+/* ===============
+    10. Footer
+   ============= */
+
+footer {
+    padding: 1em 0;
+}
+
+footer .container {
+    text-align: left;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    line-height: 2;
+}
+
+.footer__para {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+footer .about__aseedo {
+    padding-top: 1em;
+    font-size: 1rem;
+}
+
+.about__aseedo ul {
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 2.5;
+}
+
+.about__aseedo ul li a {
+    color: var(--headerTextColor);
+    text-decoration: none;
+}
+
+.about__aseedo .about__aseedo__heading {
+    color: var(--fadedColor);
+    line-height: 2;
+}
+
+.left-column {
+    width: 100%;
+}
+
+.copyright {
+    display: inline;
+    margin: 0 auto;
+}
+
+
+/* ======================
+    11. Responsive CSS
+======================== */
+
+/* ======================
+    11.1 max-height: 400
+======================== */
+@media only screen and (max-height: 400px) {
+    .header__images {
+        display: none;
+    }
+}
+
+/* ======================
+    11.2 min-width: 600px
+======================== */
+
+@media only screen and (min-width: 600px) {
+
+    /* ======================
+            Header
+    ======================== */
+    .header .container {
+        width: 80%;
+    }
+
+
+    /* =============== Steps ================ */
+
+    .steps .container,
+    .business .steps__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ================= */
+
+    /* =============== About Us ================ */
+
+    .aboutUs__body {
+        width: 50%;
+    }
+
+    .aseedo__img {
+        display: block;
+        width: 40%;
+    }
+
+    /* ================================================== */
+
+    /* =============== Aseedo for business ================ */
+    .business__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .business__frame {
+        width: 40% !important;
+        order: 2;
+    }
+
+    .content {
+        order: 1;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .business__text {
+        font-size: 2vw !important;
+        text-align: left !important;
+        width: 33vw !important;
+    }
+
+    /* =============== Footer ================ */
+    footer {
+        padding-top: 2%;
+        padding-bottom: 95px;
+    }
+
+    footer .container {
+        display: flex;
+    }
+
+    .footer__para {
+        font-size: 1.5vw;
+    }
+
+    footer ul {
+        font-size: 1vw;
+    }
+
+    .left-column {
+        width: 45%;
+    }
+
+    :is(.middle-column, .right-column) .about__aseedo {
+        padding-top: 0;
+    }
+}
+
+/* ========================== 
+    11.3 max-width: 992px
+  =========================== */
+@media only screen and (max-width: 992px) {
+    .outline {
+        /* flex-direction: column; */
+    }
+
+    .use__webapp {
+        display: none;
+    }
+}
+
+/* ========================== 
+    11.4 for laptops & desktops
+  =========================== */
+@media only screen and (min-width:992px) {
+
+    body {
+        background-color: #FFFCF5;
+    }
+
+    /* ============= 
+           Navbar
+       ============= */
+    .navbar__menuIcon {
+        display: none;
+    }
+
+    .nav-links-lg {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .nav-links-lg ul li a {
+        margin: 0 20px;
+        color: var(--headerTextColor);
+        text-decoration: none;
+    }
+
+    /* ============= 
+           Header
+       ============= */
+    .header {
+        padding-top: 0;
+    }
+
+    .header .container {
+        padding-top: 9%;
+    }
+
+    .container .header__downloadNow {
+        margin: 0;
+    }
+
+    .btns-container {
+        flex-direction: row;
+    }
+
+    .img-container81,
+    .img-container82,
+    .img-container83 {
+        position: relative;
+        height: max(30vw, 30vh);
+        width: 14vw;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+
+
+    .img-container81 {
+        transform: translate(-85%, 64%);
+    }
+
+    .img-container82 {
+        transform: translate(-100%, 7%);
+    }
+
+    .img-container83 {
+        transform: translate(115%, -43%);
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .header__h2 {
+        width: 140%;
+    }
+
+    .header .container {
+        margin: 0 auto;
+        margin-left: 10%;
+        width: 30%;
+        text-align: left;
+    }
+
+    .outline {
+        margin: 0 0 0 15px;
+    }
+
+    /* =========================
+           About Us
+       ========================= */
+    .aseedo__img {
+        width: 20%;
+    }
+
+    /* =========================
+           Aseedo for business
+       ========================= */
+    .download__btns {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px auto;
+    }
+}
