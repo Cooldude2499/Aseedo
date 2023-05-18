@@ -39,7 +39,7 @@ app.use(express.static(__dirname + '/public'));
 // app.configure(function() {
 // app.use(express.cookieParser('keyboard cat'));
 // app.use(express.session({ cookie: { maxAge: 60000 }}));
-const secret = "adkfjklut984iyt34%@%45i4y5872ewrhjf52i3i5y24i#@$3248r7es873";
+const secret = process.env.SERVER_SECRET;
 
 app.use(session({
   secret,
