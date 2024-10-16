@@ -57,37 +57,6 @@ app.use(flash());
 // });
 
 
-
-// const store = new MongoStore({
-//   url: dbUrl,
-//   secret: process.env.SERVER_SECRET,
-//   touchAfter: 24 * 60 * 60,
-// });
-
-// store.on("error", function (e) {
-//   console.log("SESSION STORE ERROR", e);
-// });
-
-
-// const sessionConfig = {
-//   store,
-//   name: "session",
-
-
-//   secret,
-//   resave: false,
-//   saveUninitialized: false,
-//   cookie: {
-//     httpOnly: true,
-//     // secure: true,
-//     expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-//     maxAge: 1000 * 60 * 60 * 24 * 7,
-//   },
-// };
-// app.use(session(sessionConfig));
-// app.use(flash());
-/* middleware for flashing 
-the SUCCESS/ERROR message */
 // =============================================
 app.use((req, res, next) => {
   res.locals.success = req.flash("success");
