@@ -21,6 +21,7 @@ const MongoStore = require("connect-mongo");
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/aseedo';
 
 
+// CONNECTION TO THE DATABASE
 main().catch((err) => console.log(err));
 
 async function main() {
