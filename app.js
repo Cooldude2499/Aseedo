@@ -106,6 +106,7 @@ app.use('*', (req, res) => {
   res.send("Page Not Found!!")
 });
 
+// CREATING A SERVER
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`SERVER STARTED AT PORT ${PORT}`);
