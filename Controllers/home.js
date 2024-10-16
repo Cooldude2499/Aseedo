@@ -1,3 +1,5 @@
+// Controllers for Homepage
+
 module.exports.renderHomepage = (req, res) => {
     if(req.session.user){
         return res.redirect(`/profile/${req.session.user._id}/home`);
